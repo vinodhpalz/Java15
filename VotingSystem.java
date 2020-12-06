@@ -1,12 +1,18 @@
+import java.util.*;
 class VotingSystem
 {
+	public static int casteVote = 0;
 	public static void main(String[] args)
 	{
+		Scanner sc = new Scanner(System.in);
 		VotingSystem v1 = new VotingSystem();
-		char vote = 'Y';
-		String day = "THU";
-		while(vote == 'Y')
+		String vote = "Y";
+		String day = null;
+
+		while(vote.equals("Y"))
 		{
+			System.out.println("Enter the Vote Day:");
+			day = sc.next();
 			switch(day)
 			{
 				case "MON":
@@ -24,8 +30,9 @@ class VotingSystem
 				
 			}
 			System.out.println("Do you want to vote again (Y/N): ");
-			vote = 'N';
+			vote = sc.next();
 		}
+		v1.totalVotes();
 		
 	}
 	public void casteVote()
@@ -38,6 +45,7 @@ class VotingSystem
 			if((voterId == true) || (aadharCard == true))
 			{
 				System.out.println("Your Eligible to Vote");
+				casteVote++;
 			}
 			else
 			{
@@ -48,5 +56,29 @@ class VotingSystem
 		{
 			System.out.println("Your not eligible to vote becos of age criteria");
 		}
-	}	
+	}
+	
+	public void totalVotes()
+	{
+		for(int count = 1; count<=casteVote ; count++)
+		{
+			System.out.println("Vote Count"+" "+count);
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 }

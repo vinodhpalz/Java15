@@ -1,0 +1,130 @@
+Oops - Object Oriented Programming System/ Structure
+
+OOPS Concepts
+-------------
+
+1. Abstraction and Encapsulation
+	-> Abstraction : Providing relavant information about an Object
+	class Student
+	{
+		studentId;
+		studentName;
+		int studentAge;
+		studentResult;
+	}
+	-> Encapsulation: Hiding/ Wrapping up of data about an Object
+	-> will use private and public modifiers to achieve Hiding of a data about an Object
+	class Student
+	{
+		studentId;
+		studentName;
+		private int studentAge;
+		studentResult;
+
+		//setters and getters
+		public void setStudentAge(int studAge)
+		{
+			if(studAge >= 18)
+			{
+				studentAge = studAge;
+			}
+			else
+			{
+				System.out.println("Invalid Age");
+			}
+		}
+		public int getStudentAge()
+		{
+			return studentAge;
+		}
+		
+	}
+	Class Test
+	{
+		main()
+		{
+			Student s1 = new Student();
+			s1.setStudentAge(-20);
+			int age = s1.getStudentAge();
+			if (age >= 18)
+			{
+				System.out.println("Eligible to Vote");
+			}
+			else
+			{
+				System.out.println("No Eligible to Vote");
+			}
+		
+		}
+	}
+		
+
+2. Inheritance
+	-> Reusability of Code
+	-> Inherit the attributes/ Properties/ Data/ Variable and methods/ functions from one class into another - extends keyword is used.
+	-> Base Class, Derived Class or Parent Class, Child Class or Super Class, Sub Class
+	-> Method Overriding - Reusability of Code is achieved
+
+	class Employee
+	{
+		public int empId;
+		public void getSalary()
+		{
+			S.O.Pln("Salary Paid");
+		}
+	}
+	class TeamLead extends Employee // TeamLead is a Employee
+	{
+		public void getSalary()
+		{
+			S.O.Pln("Pay Salary after Tax");
+		}
+	}
+
+	TeamLead tl = new TeamLead();
+	tl.empId = 100;
+	t1.getSalary();
+
+3. Polymorphism
+
+	-> Many forms of an Object
+	-> Object Polymorphism
+	-> Method Overloading, Method Overriding
+	
+Method Overloading:
+	1. In a same class, n number of methods can be defined with same name but with different arguments
+	2. Arguments can be different in few ways
+		i, Number of arguments
+		ii, Type of arguments
+		iii, Sequence of arguments
+
+
+These concepts are implemented on Objects.
+
+Class - Is a blueprint of an Object
+Object - Object is an Instance of a class
+
+
+Type Casting
+
+<data_type> variable_name = (data_type to caste) casting variable;
+
+
+float b = 4.345f;
+
+int a = (int)b;
+
+a = ?
+
+
+
+
+
+
+
+
+
+
+
+
+

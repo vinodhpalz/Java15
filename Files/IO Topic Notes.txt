@@ -1,0 +1,17 @@
+//IO - Input and Output
+
+//Read (Input) and Write (Store or Display)
+
+//Accept Input from Console and Display it in Console
+//Accept Input from Console and Store the Output in a File
+//Accept Input from a File and Write/ Display it in Console
+//Accept Input from a File and Store the Output in another File 
+
+// APIs - Application Programming Interfaces
+
+//import java.io.*;
+
+//BufferedReader, InputStreamReader, PrintStream, FileReader, FileWriter, PrintWriter
+
+byte, short, int, long, float, double, boolean, char - Primitive Data Types
+Byte, Short, Integer, Long, Float, Double, Boolean, Character - Wrapper Classes
